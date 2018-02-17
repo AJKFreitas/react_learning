@@ -13,7 +13,11 @@ const template = `
     console.log(`Ei ... ${up('cuidado')} !`)
 
     const mais10 = numero => numero += 10
-    const areaTriangulo =(base, altura) => base *altura/2
+    const areaTriangulo =(base, altura,unid) =>` ${base * altura/2} ${unid}²` 
+    const bascara = (a,b,c) => (b*b) - 4 *( a * c)
     console.log(mais10(12))
 
-    console.log(areaTriangulo(10,5))
+    console.log(areaTriangulo(10,5,'cm'))
+    console.log(bascara(1,5,6))
+
+    console.log(`A area do triangulo é${areaTriangulo(3,8,'cm')}`)
